@@ -28,7 +28,7 @@ core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance (
   .clk(clk),
   .sum_out(sum_out),
   .mem_in(mem_in),
-  .out(),
+  .out(out),
   .inst(inst),
   .reset(reset),
   .rx_ack(rx_ack),

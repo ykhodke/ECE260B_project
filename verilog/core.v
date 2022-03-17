@@ -50,6 +50,8 @@ wire  pmem_wr;
 reg [2:0] sel_norm_mux;
 reg start_sel_cnt, start_sel_cnt_q;
 
+reg tx_ack_q;
+
 reg  send_data;
 reg  send_data_q;
 wire send_data_2p;
@@ -59,10 +61,14 @@ wire [bw_psum+3:0] syncd_sum_in;
 wire [bw_psum-1:0] norm_in;
 wire [2*bw_psum-1:0] norm_out;
 
-wire norm_div;
+reg norm_div;
+reg norm_div_q;
+
+wire norm_sync_sum;
 wire norm_wr;
 wire norm_o_full;
 wire norm_o_ready;
+wire norm_o_empty;
 //
 
 assign ofifo_rd   = inst[16];
@@ -185,11 +191,13 @@ norm #(.bw(bw_psum), .sum_bw(bw_psum+4), .width(1)) norm_core0  (
   .out(norm_out),
   .sum_out(sum_out),
   .syncd_sum_in(syncd_sum_in),
-  .div(norm_div), 
+  .sync_sum(norm_sync_sum),
+  .div(norm_div_q), 
 	.wr(norm_wr), 
   .o_full(norm_o_full), 
   .reset(reset), 
-  .o_ready(norm_o_ready)
+  .o_ready(norm_o_ready),
+  .o_empty(norm_o_empty)
 );
 
 handshake #(.data_bw(bw_psum+4)) handshake_inst(
@@ -203,6 +211,19 @@ handshake #(.data_bw(bw_psum+4)) handshake_inst(
   .tx_req(tx_req),
   .received_data(syncd_sum_in)
 );
+
+always @(posedge clk) begin
+  tx_ack_q <= tx_ack;
+  norm_div <= norm_sync_sum;
+  if (norm_o_empty & norm_div_q) begin
+    norm_div_q <= 1'b0;
+  end
+  else begin
+    norm_div_q <= norm_div;
+  end
+end
+
+assign norm_sync_sum = tx_ack_q & (~tx_ack);
 
 
 //////////// For printing purpose ////////////
