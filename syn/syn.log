@@ -1,0 +1,2087 @@
+Information: Variable 'hdlin_enable_vpp' is obsolete and is being ignored. (INFO-100)
+Running PRESTO HDLC
+Compiling source file ../verilog/fullchip.v
+Presto compilation completed successfully.
+Loading db file '/home/linux/ieng6/ee260bwi22/public/PDKdata/db/tcbn65gpluswc.db'
+Running PRESTO HDLC
+Compiling source file ../verilog/core.v
+Warning:  ../verilog/core.v:97: the undeclared symbol 'fifo_valid' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ../verilog/core.v:211: Invalid escape sequence '\x' in call to '$display'. (VER-941)
+Warning:  ../verilog/core.v:211: Invalid escape sequence '\x' in call to '$display'. (VER-941)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/fifo_depth16.v
+Warning:  ../verilog/fifo_depth16.v:20: The construct 'declaration initial assignment' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ../verilog/fifo_depth16.v:21: The construct 'declaration initial assignment' is not supported in synthesis; it is ignored. (VER-708)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/fifo_top.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/fifo_mux_16_1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/fifo_mux_8_1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/fifo_mux_2_1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/handshake.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/mac_16in.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/mac_64in.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/mac_array.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/mac_col.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/norm.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/ofifo.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/sfp_row.v
+Warning:  ../verilog/sfp_row.v:78: the undeclared symbol 'reset' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/sram_128b_w16.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/sram_160b_w16.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ../verilog/sram_w16.v
+Presto compilation completed successfully.
+Warning: Detected use of obsolete/unsupported feature.  The following
+	will not be available in a future release of the application:
+	elaborate -update. Use plain elaborate instead (CMD-100)
+Loading db file '/software/ECE/DesignCompiler-Q2019.12/syn/Q-2019.12-SP5-3/libraries/syn/gtech.db'
+Loading db file '/software/ECE/DesignCompiler-Q2019.12/syn/Q-2019.12-SP5-3/libraries/syn/standard.sldb'
+  Loading link library 'tcbn65gpluswc'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (fullchip)
+Elaborated 1 design.
+Current design is now 'fullchip'.
+Information: Building the design 'core' instantiated from design 'fullchip' with
+	the parameters "bw=8,bw_psum=20,col=8,pr=16". (HDL-193)
+Warning:  ../verilog/core.v:211: Invalid escape sequence '\x' in call to '$display'. (VER-941)
+Warning:  ../verilog/core.v:211: Invalid escape sequence '\x' in call to '$display'. (VER-941)
+$display output: Memory write to PSUM mem add   ??????
+
+Inferred memory devices in process
+	in routine core_bw8_pr16_col8_bw_psum20 line 129 in file
+		'../verilog/core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  start_sel_cnt_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  sel_norm_mux_reg   | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine core_bw8_pr16_col8_bw_psum20 line 148 in file
+		'../verilog/core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| start_sel_cnt_q_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine core_bw8_pr16_col8_bw_psum20 line 152 in file
+		'../verilog/core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   send_data_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    send_data_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (core_bw8_pr16_col8_bw_psum20)
+Information: Building the design 'mac_array' instantiated from design 'core_bw8_pr16_col8_bw_psum20' with
+	the parameters "bw=8,bw_psum=20,col=8,pr=16". (HDL-193)
+Presto compilation completed successfully. (mac_array_col8_bw8_bw_psum20_pr16)
+Information: Building the design 'ofifo' instantiated from design 'core_bw8_pr16_col8_bw_psum20' with
+	the parameters "bw=20,col=8". (HDL-193)
+Presto compilation completed successfully. (ofifo_col8_bw20)
+Information: Building the design 'sram_w16' instantiated from design 'core_bw8_pr16_col8_bw_psum20' with
+	the parameters "sram_bit=128". (HDL-193)
+
+Statistics for case statements in always block at line 48 in file
+	'../verilog/sram_w16.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            51            |    auto/auto     |
+|            72            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine sram_w16_sram_bit128 line 48 in file
+		'../verilog/sram_w16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    memory12_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory10_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory11_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory13_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory14_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|        Q_reg        | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory15_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory0_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory1_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory2_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory3_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory4_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory5_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory6_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory7_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory8_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory9_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (sram_w16_sram_bit128)
+Information: Building the design 'sram_w16' instantiated from design 'core_bw8_pr16_col8_bw_psum20' with
+	the parameters "sram_bit=160". (HDL-193)
+
+Statistics for case statements in always block at line 48 in file
+	'../verilog/sram_w16.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            51            |    auto/auto     |
+|            72            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine sram_w16_sram_bit160 line 48 in file
+		'../verilog/sram_w16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    memory12_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory10_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory11_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory13_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory14_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|        Q_reg        | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory15_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory0_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory1_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory2_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory3_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory4_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory5_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory6_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory7_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory8_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory9_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (sram_w16_sram_bit160)
+Information: Building the design 'fifo_mux_8_1' instantiated from design 'core_bw8_pr16_col8_bw_psum20' with
+	the parameters "bw=20,simd=1". (HDL-193)
+Presto compilation completed successfully. (fifo_mux_8_1_bw20_simd1)
+Information: Building the design 'norm' instantiated from design 'core_bw8_pr16_col8_bw_psum20' with
+	the parameters "bw=20,sum_bw=24,width=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine norm_bw20_width1_sum_bw24 line 47 in file
+		'../verilog/norm.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sum_q_reg      | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+|      out_q_reg      | Flip-flop |  40   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (norm_bw20_width1_sum_bw24)
+Information: Building the design 'handshake' instantiated from design 'core_bw8_pr16_col8_bw_psum20' with
+	the parameters "data_bw=24". (HDL-193)
+Warning:  ../verilog/handshake.v:55: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 35 in file
+	'../verilog/handshake.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 54 in file
+	'../verilog/handshake.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            55            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine handshake_data_bw24 line 82 in file
+		'../verilog/handshake.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    rx_state_reg     | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|    tx_state_reg     | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  received_data_reg  | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (handshake_data_bw24)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=1". (HDL-193)
+Warning:  ../verilog/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id1 line 37 in file
+		'../verilog/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id1)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=2". (HDL-193)
+Warning:  ../verilog/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id2 line 37 in file
+		'../verilog/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id2)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=3". (HDL-193)
+Warning:  ../verilog/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id3 line 37 in file
+		'../verilog/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id3)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=4". (HDL-193)
+Warning:  ../verilog/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id4 line 37 in file
+		'../verilog/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id4)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=5". (HDL-193)
+Warning:  ../verilog/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id5 line 37 in file
+		'../verilog/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id5)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=6". (HDL-193)
+Warning:  ../verilog/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id6 line 37 in file
+		'../verilog/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id6)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=7". (HDL-193)
+Warning:  ../verilog/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id7 line 37 in file
+		'../verilog/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id7)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=8". (HDL-193)
+Warning:  ../verilog/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id8 line 37 in file
+		'../verilog/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id8)
+Information: Building the design 'fifo_depth16' instantiated from design 'ofifo_col8_bw20' with
+	the parameters "bw=20,simd=1". (HDL-193)
+
+Statistics for case statements in always block at line 63 in file
+	'../verilog/fifo_depth16.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            73            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fifo_depth16_bw20_simd1 line 53 in file
+		'../verilog/fifo_depth16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rd_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fifo_depth16_bw20_simd1 line 63 in file
+		'../verilog/fifo_depth16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       q6_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q10_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q7_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q8_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q9_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q11_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|     wr_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q12_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q13_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q14_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q15_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q0_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q1_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q2_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q3_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q4_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q5_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (fifo_depth16_bw20_simd1)
+Information: Building the design 'fifo_mux_2_1' instantiated from design 'fifo_mux_8_1_bw20_simd1' with
+	the parameters "bw=20,simd=1". (HDL-193)
+Presto compilation completed successfully. (fifo_mux_2_1_bw20_simd1)
+Information: Building the design 'fifo_top' instantiated from design 'norm_bw20_width1_sum_bw24' with
+	the parameters "bw=20,width=1". (HDL-193)
+Presto compilation completed successfully. (fifo_top_bw20_width1)
+Information: Building the design 'mac_16in' instantiated from design 'mac_col_bw8_bw_psum20_pr16_col_id1' with
+	the parameters "bw=8,bw_psum=20,pr=16". (HDL-193)
+Presto compilation completed successfully. (mac_16in_bw8_bw_psum20_pr16)
+Information: Building the design 'fifo_mux_16_1' instantiated from design 'fifo_depth16_bw20_simd1' with
+	the parameters "bw=20,simd=1". (HDL-193)
+Presto compilation completed successfully. (fifo_mux_16_1_bw20_simd1)
+Information: Building the design 'fifo_depth16' instantiated from design 'fifo_top_bw20_width1' with
+	the parameters "bw=20". (HDL-193)
+
+Statistics for case statements in always block at line 63 in file
+	'../verilog/fifo_depth16.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            73            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fifo_depth16_bw20 line 53 in file
+		'../verilog/fifo_depth16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rd_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fifo_depth16_bw20 line 63 in file
+		'../verilog/fifo_depth16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       q6_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q10_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q7_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q8_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q9_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q11_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|     wr_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q12_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q13_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q14_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q15_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q0_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q1_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q2_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q3_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q4_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q5_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (fifo_depth16_bw20)
+Current design is 'fullchip'.
+
+  Linking design 'fullchip'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (23 designs)              /home/linux/ieng6/ee260bwi22/spramesh/proj1/ECE260B_project/syn/fullchip.db, etc
+  tcbn65gpluswc (library)     /home/linux/ieng6/ee260bwi22/public/PDKdata/db/tcbn65gpluswc.db
+
+
+Reading SDC version 2.1...
+
+#   Propagate Constraints from cell core_instance/ (core_bw8_pr16_col8_bw_psum20) #
+
+#   Propagate Constraints from cell core_instance/handshake_inst/ (handshake_data_bw24) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/ (norm_bw20_width1_sum_bw24) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/ (fifo_top_bw20_width1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/ (fifo_depth16_bw20) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/norm_core0/fifo_top_instance/fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mux_norm_load0/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mux_norm_load0/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mux_norm_load0/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mux_norm_load0/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mux_norm_load0/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mux_norm_load0/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mux_norm_load0/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mux_norm_load0/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/psum_mem_instance/ (sram_w16_sram_bit160) #
+
+#   Propagate Constraints from cell core_instance/kmem_instance/ (sram_w16_sram_bit128) #
+
+#   Propagate Constraints from cell core_instance/qmem_instance/ (sram_w16_sram_bit128) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/ (ofifo_col8_bw20) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/ (mac_array_col8_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[8].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id8) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[8].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[7].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id7) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[7].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[6].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id6) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[6].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[5].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id5) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[5].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[4].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id4) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[4].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[3].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id3) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[3].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[2].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id2) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[2].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[1].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id1) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[1].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+Current design is 'fullchip'.
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Can't find object '/home/linux/ieng6/ee260bwi22/public/PDKdata/db/tcbn65gpluswc.db/BUFFD8/A' in design 'fullchip'. (UID-95)
+Error: value '' for option 'value' not of type 'float' (CMD-009)
+Current design is 'fullchip'.
+Current design is 'core_bw8_pr16_col8_bw_psum20'.
+Current design is 'mac_array_col8_bw8_bw_psum20_pr16'.
+Current design is 'ofifo_col8_bw20'.
+Current design is 'sram_w16_sram_bit128'.
+Current design is 'sram_w16_sram_bit160'.
+Current design is 'fifo_mux_8_1_bw20_simd1'.
+Current design is 'norm_bw20_width1_sum_bw24'.
+Current design is 'handshake_data_bw24'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id1'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id2'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id3'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id4'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id5'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id6'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id7'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id8'.
+Current design is 'fifo_depth16_bw20_simd1'.
+Current design is 'fifo_mux_2_1_bw20_simd1'.
+Current design is 'fifo_top_bw20_width1'.
+Current design is 'mac_16in_bw8_bw_psum20_pr16'.
+Current design is 'fifo_mux_16_1_bw20_simd1'.
+Current design is 'fifo_depth16_bw20'.
+Current design is 'fullchip'.
+Information: Changed wire load model for 'handshake_data_bw24' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_top_bw20_width1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'norm_bw20_width1_sum_bw24' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'sram_w16_sram_bit160' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'sram_w16_sram_bit128' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'sram_w16_sram_bit128' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'ofifo_col8_bw20' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id8' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id7' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id6' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id5' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id4' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id3' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id2' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_array_col8_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'core_bw8_pr16_col8_bw_psum20' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Updating graph... (UID-83)
+Warning: Design 'fullchip' contains 21 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Loading db file '/software/ECE/DesignCompiler-Q2019.12/syn/Q-2019.12-SP5-3/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.5 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.5 |     *     |
+============================================================================
+
+
+Information: There are 264 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'fullchip'
+Information: The register 'core_instance/handshake_inst/received_data_reg[23]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[22]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[21]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[20]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/handshake_inst/received_data_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q6_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q10_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q7_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q8_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q9_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q11_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q12_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q13_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q14_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q15_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q0_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q1_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q2_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q3_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q4_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/q5_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[39]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[38]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[37]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[36]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[35]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[34]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[33]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[32]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[31]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[30]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[29]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[28]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[27]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[26]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[25]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[24]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[23]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[22]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[21]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[20]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[19]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[18]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[17]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[16]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[15]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[14]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[13]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[12]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[11]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[10]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[9]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[8]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[7]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[6]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[5]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/out_q_reg[0]' will be removed. (OPT-1207)
+
+Loaded alib file './alib-52/tcbn65gpluswc.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'fullchip'
+Information: Added key list 'DesignWare' to design 'fullchip'. (DDB-72)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/rd_ptr_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/rd_ptr_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/rd_ptr_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/rd_ptr_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/rd_ptr_reg[0]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/wr_ptr_reg[4]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/wr_ptr_reg[3]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/wr_ptr_reg[2]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/wr_ptr_reg[1]' will be removed. (OPT-1207)
+Information: The register 'core_instance/norm_core0/fifo_top_instance/fifo_instance/wr_ptr_reg[0]' will be removed. (OPT-1207)
+ Implement Synthetic for 'fullchip'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIEL' in the library 'tcbn65gpluswc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEH' in the library 'tcbn65gpluswc' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+	Number of combinational loops found: 0
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+	Number of combinational loops found: 0
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:11  282678.8      1.04    2783.6       0.0                           3273300.7500      0.00  
+    0:02:12  282674.5      1.04    2783.6       0.0                           3273252.2500      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+	Number of combinational loops found: 0
+    0:02:14  282714.1      1.04    2783.6       0.0                           3274147.5000      0.00  
+    0:02:16  282714.1      1.04    2783.6       0.0                           3274147.5000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'fullchip_DP_OP_1364J1_127_8403_2'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:38  224394.8      1.18    2157.4       0.0                           2196315.2500      0.00  
+    0:03:30  229046.8      0.99    1925.3       0.0                           2285804.5000      0.00  
+    0:03:30  229046.8      0.99    1925.3       0.0                           2285804.5000      0.00  
+    0:03:30  229046.8      0.99    1925.3       0.0                           2285804.5000      0.00  
+    0:03:35  227836.1      0.99    1916.2       0.0                           2270873.2500      0.00  
+    0:03:38  227832.1      0.99    1917.0       0.0                           2270845.5000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+	Number of combinational loops found: 0
+    0:03:48  227426.8      0.99    1916.8       0.0                           2256361.2500      0.00  
+    0:03:52  225485.6      0.99    1918.2       0.0                           2221074.7500      0.00  
+    0:03:56  225995.4      0.98    1893.8       0.0                           2233362.5000      0.00  
+    0:03:57  226009.4      0.98    1892.0       0.0                           2233641.5000      0.00  
+    0:03:57  226009.4      0.98    1892.0       0.0                           2233641.5000      0.00  
+    0:04:01  225964.4      0.98    1888.9       0.0                           2207919.2500      0.00  
+    0:04:01  225964.4      0.98    1888.9       0.0                           2207919.2500      0.00  
+    0:04:35  227611.4      0.97    1885.7       0.0                           2219039.2500      0.00  
+    0:04:35  227611.4      0.97    1885.7       0.0                           2219039.2500      0.00  
+    0:04:36  227691.4      0.97    1884.6       0.0                           2220900.7500      0.00  
+    0:04:36  227691.4      0.97    1884.6       0.0                           2220900.7500      0.00  
+    0:04:41  227770.6      0.97    1885.2       0.0                           2221788.2500      0.00  
+    0:04:41  227770.6      0.97    1885.2       0.0                           2221788.2500      0.00  
+    0:09:21  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:21  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:22  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:22  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:23  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:23  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:25  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:25  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:26  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:26  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:27  237146.8      0.89    1752.3       0.0                           2385620.7500      0.00  
+    0:09:29  237221.3      0.88    1749.7       0.0                           2387035.7500      0.00  
+    0:09:48  237513.2      0.88    1748.5       0.0                           2388811.2500      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:09:48  237513.2      0.88    1748.5       0.0                           2388811.2500      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+    0:10:04  235346.4      0.88    2177.6       0.0                           2343619.0000      0.00  
+    0:10:13  235430.6      0.88    2177.3       0.0                           2343241.7500      0.00  
+    0:10:13  235430.6      0.88    2177.3       0.0                           2343241.7500      0.00  
+    0:10:16  235222.2      0.88    1813.7       0.0                           2336069.7500      0.00  
+    0:10:16  235222.2      0.88    1813.7       0.0                           2336069.7500      0.00  
+    0:10:18  235222.2      0.88    1813.7       0.0                           2336069.7500      0.00  
+    0:10:18  235222.2      0.88    1813.7       0.0                           2336069.7500      0.00  
+    0:10:18  235231.2      0.88    1813.6       0.0                           2336267.5000      0.00  
+    0:10:18  235231.2      0.88    1813.6       0.0                           2336267.5000      0.00  
+    0:10:21  235302.1      0.88    1813.1       0.0                           2336655.0000      0.00  
+    0:10:21  235302.1      0.88    1813.1       0.0                           2336655.0000      0.00  
+    0:11:11  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:11  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:12  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:12  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:13  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:13  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:14  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:14  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:15  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:15  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:16  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:11:16  236147.4      0.88    1802.5       0.0                           2348395.5000      0.00  
+    0:11:25  230262.5      0.88    1705.2       0.0                           2188311.0000      0.00  
+    0:11:25  230237.3      0.87    1705.5       0.0                           2187972.7500      0.00  
+    0:11:25  230237.3      0.87    1705.5       0.0                           2187972.7500      0.00  
+    0:11:29  230235.8      0.87    1704.9       0.0                           2186927.7500      0.00  
+    0:11:33  228857.4      0.87    1712.4       0.0                           2160341.0000      0.00  
+    0:11:34  228726.4      0.87    1711.9       0.0                           2157342.0000      0.00  
+    0:11:59  229347.7      0.87    1696.4       0.0                           2167589.0000      0.00  
+    0:11:59  229347.7      0.87    1696.4       0.0                           2167589.0000      0.00  
+    0:12:01  229382.6      0.87    1692.4       0.0                           2168758.5000      0.00  
+    0:12:02  229382.6      0.87    1692.4       0.0                           2168758.5000      0.00  
+    0:12:02  229382.6      0.87    1692.4       0.0                           2168758.5000      0.00  
+    0:12:15  226751.0      0.86    1692.3       0.0                           2107660.5000      0.00  
+Loading db file '/home/linux/ieng6/ee260bwi22/public/PDKdata/db/tcbn65gpluswc.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'fullchip' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 11859 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Current design is 'fullchip'.
+Writing verilog file '/home/linux/ieng6/ee260bwi22/spramesh/proj1/ECE260B_project/syn/fullchip.out.v'.
+run.scr completed successfully
