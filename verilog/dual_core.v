@@ -25,12 +25,12 @@ wire tx1_req_rx0_req;
 wire rx0_ack_tx1_ack;
 
 
+wire [bw_psum+3:0] sum_out_0_temp;
+wire [bw_psum+3:0] sum_out_1_temp;
 
 assign sum_out_0 = sum_out_0_temp;
 assign sum_out_1 = sum_out_1_temp;
 
-wire [bw_psum+3:0] sum_out_0_temp;
-wire [bw_psum+3:0] sum_out_1_temp;
 
 
 

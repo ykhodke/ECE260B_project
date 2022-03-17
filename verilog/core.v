@@ -229,7 +229,7 @@ assign norm_sync_sum = tx_ack_q & (~tx_ack);
 //////////// For printing purpose ////////////
 always @(posedge clk) begin
   if(pmem_wr)
-    $display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
+    //$display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
 end
 
 
