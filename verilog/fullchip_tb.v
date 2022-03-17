@@ -71,6 +71,7 @@ reg [bw_psum*col-1:0] temp16b;
 wire [bw_psum+3:0] sum_out_0;
 wire [bw_psum+3:0] sum_out_1;
 
+//source_destination
 wire tx0_req_rx1_req;
 wire rx1_ack_tx0_ack;
 

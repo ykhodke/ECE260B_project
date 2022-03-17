@@ -31,7 +31,7 @@ wire full;
 wire out_temp;
 
 assign out = out_q;
-assign out_temp = {fifo_out} / sum_q;
+assign out_temp = {fifo_out} / cumm_sum;
 assign sum_out = sum_q;
 
 
@@ -51,7 +51,7 @@ always @ (posedge clk) begin
   end
   else begin
     // wr to increment sum, sync_sum for sum_c0 + sum_c1, div for division
-    if (wr) sum_q <= sum_q + in;
+    if (wr) sum_q <= (in[bw-1] == 1'b1) ? sum_q - in : sum_q + in;
     else if (sync_sum) cumm_sum <= syncd_sum_in + sum_q;
     else if (div) out_q <= out_temp;
   end
