@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 set top_module fullchip
 set rtlPath "../verilog"
+=======
+set top_module dual_core
+#set rtlPath "/home/linux/ieng6/ee260bwi22/public/DESIGNdata/aes_cipher_top/rtl"
+#set rtlPath "/home/linux/ieng6/ee260bwi22/abhansali/"
+set rtlPath "/home/linux/ieng6/ee260bwi22/abhansali/ECE260B_project/verilog"
+>>>>>>> 7883d248d734cccc30290d6eb34e182e7710a93e
 
 # Target library
 set target_library /home/linux/ieng6/ee260bwi22/public/PDKdata/db/tcbn65gpluswc.db 
@@ -42,6 +49,7 @@ define_design_lib WORK -path .template
 set verilogout_single_bit false
 
 # read RTL
+<<<<<<< HEAD
 analyze -format verilog -lib WORK fullchip.v
 analyze -format verilog -lib WORK core.v
 # analyze -format verilog -lib WORK ctrl.v
@@ -64,6 +72,56 @@ analyze -format verilog -lib WORK sram_160b_w16.v
 analyze -format verilog -lib WORK sram_w16.v
 
 
+=======
+
+#analyze -format verilog -lib WORK fullchip_tb.v
+#analyze -format verilog -lib WORK fullchip.v
+#analyze -format verilog -lib WORK core.v
+#analyze -format verilog -lib WORK sync.v
+#analyze -format verilog -lib WORK sfp_row.v
+#analyze -format verilog -lib WORK mac_col.v
+#analyze -format verilog -lib WORK mac_16in.v
+#analyze -format verilog -lib WORK mac_array.v
+#analyze -format verilog -lib WORK sram_w16.v
+#analyze -format verilog -lib WORK ofifo.v
+#analyze -format verilog -lib WORK fifo_depth16.v
+#analyze -format verilog -lib WORK fifo_mux_16_1.v
+#analyze -format verilog -lib WORK fifo_mux_8_1.v
+#analyze -format verilog -lib WORK fifo_mux_2_1.v
+
+analyze -format verilog -lib WORK dual_core.v
+analyze -format verilog -lib WORK fullchip.v
+analyze -format verilog -lib WORK core.v
+analyze -format verilog -lib WORK handshake.v
+analyze -format verilog -lib WORK fifo_depth16.v
+analyze -format verilog -lib WORK fifo_mux_16_1.v
+analyze -format verilog -lib WORK fifo_mux_2_1.v
+analyze -format verilog -lib WORK fifo_mux_8_1.v
+analyze -format verilog -lib WORK fifo_top.v
+analyze -format verilog -lib WORK mac_16in.v
+analyze -format verilog -lib WORK mac_64in.v
+analyze -format verilog -lib WORK mac_array.v
+analyze -format verilog -lib WORK mac_col.v
+analyze -format verilog -lib WORK norm.v
+analyze -format verilog -lib WORK ofifo.v
+analyze -format verilog -lib WORK sfp_row.v
+analyze -format verilog -lib WORK sram_128b_w16.v
+analyze -format verilog -lib WORK sram_160b_w16.v
+analyze -format verilog -lib WORK sram_w16.v
+
+
+
+
+
+
+
+#analyze -format verilog -lib WORK aes_cipher_top.v
+#analyze -format verilog -lib WORK aes_key_expand_128.v
+#analyze -format verilog -lib WORK aes_rcon.v
+#analyze -format verilog -lib WORK aes_sbox.v
+#analyze -format verilog -lib WORK timescale.v
+
+>>>>>>> 7883d248d734cccc30290d6eb34e182e7710a93e
 elaborate $top_module -lib WORK -update
 current_design $top_module
 
@@ -71,7 +129,11 @@ current_design $top_module
 link
 
 # Default SDC Constraints
+<<<<<<< HEAD
 read_sdc ../constraints/${top_module}.sdc
+=======
+read_sdc ${top_module}.sdc
+>>>>>>> 7883d248d734cccc30290d6eb34e182e7710a93e
 propagate_constraints
 
 current_design $top_module
@@ -81,10 +143,17 @@ set_fix_multiple_port_nets -all -buffer_constants
 set_fix_hold [all_clocks]
 
 set_driving_cell -lib_cell BUFFD8 -pin Z [all_inputs]
+<<<<<<< HEAD
 set_load [get_attribute "$target_library/BUFFD8/A" fanout_load] [all_outputs]
 #foreach_in_collection p [all_outputs] {
 #	set_load 0.050 $p
 #}
+=======
+#set_load [get_attribute "$target_library/BUFFD8/A" fanout_load] [all_outputs]
+foreach_in_collection p [all_outputs] {
+	set_load 0.050 $p
+}
+>>>>>>> 7883d248d734cccc30290d6eb34e182e7710a93e
 
 #More compiler directives
 set compile_effort   "high"
@@ -103,9 +172,13 @@ current_design $top_module
 
 # Compile
 # Source user compile options
+<<<<<<< HEAD
 #compile_ultra -no_autoungroup -timing_high_effort_script -exact_map
 ungroup -flatten -all
 compile_ultra -timing_high_effort_script -exact_map
+=======
+compile_ultra -no_autoungroup -timing_high_effort_script -exact_map
+>>>>>>> 7883d248d734cccc30290d6eb34e182e7710a93e
 
 # Write Out Design - Hierarchical
 current_design $top_module
@@ -115,7 +188,11 @@ change_names -rules verilog -hierarchy
 write -format verilog -hier -output [format "%s%s" $top_module .out.v]
 
 # Write Reports
+<<<<<<< HEAD
 redirect [format "%s%s" log/ $top_module _area.rep] { report_area }
+=======
+redirect [format "%s%s%s" log/ $top_module _area.rep] { report_area }
+>>>>>>> 7883d248d734cccc30290d6eb34e182e7710a93e
 redirect -append [format "%s%s%s" log/ $top_module _area.rep] { report_reference }
 redirect [format "%s%s%s" log/ $top_module _power.rep] { report_power }
 redirect [format "%s%s%s" log/ $top_module _timing.rep] \

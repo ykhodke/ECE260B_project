@@ -6835,3 +6835,4 @@ source run_dc.tcl > syn.log
 #@ 
 #@ # -- End source run_dc.tcl
 
+exit
